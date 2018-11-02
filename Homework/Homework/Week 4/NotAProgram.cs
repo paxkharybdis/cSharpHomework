@@ -8,12 +8,7 @@ namespace Homework
 {
     class BoatFactory
     {
-        /* static void Main(string[] args)
-         {
-             BoatBuilderPattern();
-         }*/
-
-        private static void BoatBuilderPattern()
+        private void BoatBuilderPattern()
         {
             BoatBuilder builder = new MotorBoatBuilder();
             BoatDirector director = new MotorBoatDirector();

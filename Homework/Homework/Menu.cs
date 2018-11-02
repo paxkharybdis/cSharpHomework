@@ -18,11 +18,12 @@ namespace Homework
                 Console.Clear();
                 Console.WriteLine("================================================");
                 Console.WriteLine("Which C# code example would you like to execute?");
-                Console.WriteLine("Week 1: Basic Class Functions.  (1)");
-                Console.WriteLine("Week 2: Counting To Ten.        (2)");
-                Console.WriteLine("Week 2: Display Grades.         (3)");
-                Console.WriteLine("Week 3: Virtual Bicycle Shop    (4)");
-                Console.WriteLine("Week 5: Welcome The Delegation  (5)");
+                Console.WriteLine("Week 1: Basic Class Functions.  (A)");
+                Console.WriteLine("Week 2: Counting To Ten.        (B)");
+                Console.WriteLine("Week 2: Display Grades.         (C)");
+                Console.WriteLine("Week 3: Virtual Bicycle Shop.   (D)");
+                Console.WriteLine("Week 4: Boat Builder.           (E)");
+                Console.WriteLine("Week 5: Find Your Lucky Number. (F)");
                 Console.WriteLine();
                 Console.WriteLine();
                 Console.WriteLine();
@@ -32,27 +33,39 @@ namespace Homework
 
                 switch (menuInput)
                 {
-                    case "1":
+                    case "A":
+                    case "a":
                         Console.WriteLine("Basic Class Functions.");
                         Bicycle bicycle = new Bicycle();
                         bicycle.ShowAll();
                         break;
-                    case "2":
+                    case "B":
+                    case "b":
                         Console.WriteLine("Count To Ten");
                         CountToTen counting = new CountToTen();
                         counting.Counting();
                         break;
-                    case "3":
+                    case "C":
+                    case "c":
                         Console.WriteLine("The Great Grade Displayer!!");
                         Gradeswitch gradeswitch = new Gradeswitch();
                         gradeswitch.GradeMenu();
                         break;
-                    case "4":
+                    case "D":
+                    case "d":
                         Console.WriteLine("Loading Virtual Bicycle Shop");
                         bicycle2 bicycle2 = new bicycle2();
                         bicycle2.bikeMenu();
                         break;
-                    case "5":
+                    case "E":
+                    case "e":
+                        Console.WriteLine("Boaty McBoatface Factory");
+                        BoatBuilder builder = new SailBoatBuilder();
+                        BoatBuilder motorbuild = new MotorBoatBuilder();
+                        break;
+                    case "F":
+                    case "f":
+                        Console.WriteLine("Finding Your Lucky Number!");
 
                         break;
                 }

@@ -8,7 +8,8 @@ namespace Homework
 {
     public class MotorBoatBuilder : BoatBuilder
     {
-        private IBoat motorBoatInProgress;
+        private readonly IBoat build;
+
 
         public override IBoat Boat
         {
@@ -18,6 +19,16 @@ namespace Homework
         public override void BuildBoatHull()
         {
             Console.WriteLine("Building Motorboat Hull");
+        }
+
+        public string MotorBoat
+        {
+            get { return "Motor boat hull finished."; }
+        }
+
+        public MotorBoatBuilder(BoatBuilder boat)
+        {
+            this.motorBoatInProgress = boat;
         }
     }
 }

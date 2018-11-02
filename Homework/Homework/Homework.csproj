@@ -52,6 +52,9 @@
     <Compile Include="Week 2\gradeswitch.cs" />
     <Compile Include="Week 3\bicycle2.cs" />
     <Compile Include="Week 3\GenericBicycle.cs" />
+    <Compile Include="Week 4\AbstractBoat.cs" />
+    <Compile Include="Week 4\AbstractMotorBoat.cs" />
+    <Compile Include="Week 4\HullColor.cs" />
     <Compile Include="Week 4\BoatBuilder.cs" />
     <Compile Include="Week 4\BoatDirector.cs" />
     <Compile Include="Week 4\IBoat.cs" />

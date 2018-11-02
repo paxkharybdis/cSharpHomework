@@ -10,7 +10,10 @@ namespace Homework
     {
         public abstract IBoat Boat { get; }
 
-        public virtual void BuildBoatHull() { }
+        public virtual void BuildBoatHull()
+        {
+            Console.WriteLine("Building Boat Hull.");
+        }
 
 
     }
