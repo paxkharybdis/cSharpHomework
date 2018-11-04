@@ -9,27 +9,55 @@ namespace Homework
     public abstract class AbstractBoat : IBoat
     {
         private HullColor _color;
+        private Helm _helmtype;
+        private Hull _hulltype;
+
+        public abstract void motorBoatInProgress();
+
+        public abstract void sailBoatInProgress();
+
+        public abstract decimal Price { get; }
 
         public HullColor ColorType
         {
             get { return _color; }
         }
 
-        public void AttachMotor(string motor)
+        public Helm HelmType
         {
-            throw new NotImplementedException();
+            get { return _helmtype; }
         }
 
-        public void AttachRudder(string rudder)
+        public Hull HullType
         {
-            throw new NotImplementedException();
+            get { return _hulltype; }
+        }
+        public override string ToString()
+        {
+            return this.GetType().Name +
+                "Boat has a" + _hulltype + " and the color is " + _color + " and it costs $" + Price;
+        }
+
+        public void BuildMotor(string motor)
+        {
+
+        }
+
+        public void BuildRudder(string rudder)
+        {
+
         }
 
         public void BuildBoatHull(string hull)
         {
-            throw new NotImplementedException();
+
         }
 
-        public abstract decimal Price { get; }
+        public void BuildSail(string sail)
+        {
+
+        }
+
+
     }
 }

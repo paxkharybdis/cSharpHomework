@@ -28,6 +28,7 @@ namespace Homework
                 Console.WriteLine();
                 Console.WriteLine();
                 Console.WriteLine("================================================");
+                Console.WriteLine();
                 Console.Write("Enter choice:");
                 menuInput = Console.ReadLine();
 
@@ -60,13 +61,14 @@ namespace Homework
                     case "E":
                     case "e":
                         Console.WriteLine("Boaty McBoatface Factory");
-                        BoatBuilder builder = new SailBoatBuilder();
-                        BoatBuilder motorbuild = new MotorBoatBuilder();
+                        BoatMenu boatmenu = new BoatMenu();
+                        BoatMenu.TheMenu();
                         break;
                     case "F":
                     case "f":
                         Console.WriteLine("Finding Your Lucky Number!");
-
+                        PretendProgram pretend = new PretendProgram();
+                        PretendProgram.DelegateSample();
                         break;
                 }
             } while (true);

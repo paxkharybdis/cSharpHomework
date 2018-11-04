@@ -11,6 +11,10 @@ namespace Homework
         public override IBoat Build(BoatBuilder builder)
         {
             builder.BuildBoatHull();
+            builder.BuildMotor();
+            builder.BuildRudder();
+            builder.BuildHelm();
+            builder.ToString();
             return builder.Boat;
         }
 

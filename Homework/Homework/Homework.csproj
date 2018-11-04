@@ -54,13 +54,16 @@
     <Compile Include="Week 3\GenericBicycle.cs" />
     <Compile Include="Week 4\AbstractBoat.cs" />
     <Compile Include="Week 4\AbstractMotorBoat.cs" />
+    <Compile Include="Week 4\AbstractSailBoat.cs" />
+    <Compile Include="Week 4\BoatMenu.cs" />
+    <Compile Include="Week 4\Helm.cs" />
+    <Compile Include="Week 4\Hull.cs" />
     <Compile Include="Week 4\HullColor.cs" />
     <Compile Include="Week 4\BoatBuilder.cs" />
     <Compile Include="Week 4\BoatDirector.cs" />
     <Compile Include="Week 4\IBoat.cs" />
     <Compile Include="Week 4\MotorBoatBuilder.cs" />
     <Compile Include="Week 4\MotorBoatDirector.cs" />
-    <Compile Include="Week 4\NotAProgram.cs" />
     <Compile Include="Week 4\SailBoatBuilder.cs" />
     <Compile Include="Week 4\SailBoatDirector.cs" />
     <Compile Include="Week 5\DelegateExample.cs" />

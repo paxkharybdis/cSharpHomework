@@ -6,32 +6,32 @@ using System.Threading.Tasks;
 
 namespace Homework
 {
-    class AbstractMotorBoat : AbstractBoat
+    class AbstractSailBoat : AbstractBoat
     {
         private IBoat hull;
-        private HullColor white;
-        private Helm wheel;
+        private HullColor red;
+        private Helm outboard;
 
-        public AbstractMotorBoat(IBoat hull, HullColor white, Helm wheel)
+        public AbstractSailBoat(IBoat hull, HullColor red, Helm outboard)
         {
             this.hull = hull;
-            this.white = white;
-            this.wheel = wheel;
+            this.red = red;
+            this.outboard = outboard;
         }
 
         public override decimal Price
         {
-            get { return 1000.00m; }
+            get { return 1738.00m; }
         }
 
         public override void motorBoatInProgress()
         {
-            Console.WriteLine("Motor boat in progress.");
+
         }
 
         public override void sailBoatInProgress()
         {
-
+            Console.WriteLine("Sailboat in progress.");
         }
     }
 }

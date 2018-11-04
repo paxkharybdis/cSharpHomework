@@ -9,13 +9,7 @@ namespace Homework
         public delegate int TheMagicNumber(int _magicNumber);
         public int _magicNumber { get; set; }
 
-        /*static void PretendMain(string[] args)
-        {
-            DelegateSample();
-        }
-        */
-
-        private static int DelegateSample()
+        public static int DelegateSample()
         {
             // Request Input
             Console.WriteLine("Enter your favorite number, and I'll tell you what your lucky number is:");
@@ -29,11 +23,15 @@ namespace Homework
                 DelegateExample.TheMagicNumber theMagicNumber = new DelegateExample.TheMagicNumber(delegateExample.TheLuckyNumber());
                 int result = theMagicNumber(number1);
                 Console.WriteLine("Your Lucky Number is " + result + ".");
+                Console.WriteLine("Press ENTER to return to the main menu.");
+                Console.ReadLine();
                 return result;
             }
             else
             {
                 Console.WriteLine("Sorry, {0} is not a number,  I guess you are just unlucky.", userInput);
+                Console.WriteLine("Press ENTER to return to the main menu.");
+                Console.ReadLine();
                 return number1;
             }
         }

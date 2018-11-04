@@ -9,11 +9,16 @@ namespace Homework
     public interface IBoat
     {
         void BuildBoatHull(string hull);
-        void AttachMotor(string motor);
-        void AttachRudder(string rudder);
+        void BuildMotor(string motor);
+        void BuildRudder(string rudder);
+        void BuildSail(string sail);
 
         HullColor ColorType { get; }
+        Helm HelmType { get; }
         decimal Price { get; }
+
+        void motorBoatInProgress();
+        void sailBoatInProgress();
 
     }
 }
